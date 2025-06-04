@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Monitoring Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Stock Tracker Dashboard</h1>
+    </header>
+    <main>
+        <section class="selection-area">
+            <h2>Select Trending Stock</h2>
+            <select id="stockSelect">
+            </select>
+            <button id="fetchStockButton">Load Stock</button>
+        </section>
+
+        <section class="search-area">
+            <input type="text" id="stockInput" placeholder="Search for a stock  ">
+            <button id="findButton">Search</button>
+        </section>
+
+        <section class="stock-details">
+            <h2>Stock Details</h2>
+            <div id="detailsContainer"></div>
+        </section>
+
+        <section class="chart-area">
+            <h2>Stock Price Chart</h2>
+            <canvas id="priceChart"></canvas>
+        </section>
+
+        <section class="comparison-area">
+            <h2>Stock Comparison</h2>
+            <table id="comparisonTable">
+                <thead>
+                    <tr>
+                        <th>Stock</th>
+                        <th> Price</th>
+                        <th> Change</th>
+                        <th> Volume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
